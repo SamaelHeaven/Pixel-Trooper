@@ -232,6 +232,7 @@ public final class Spirit extends Component implements ContactListener, EyeExplo
     private void updateDeath() {
         if (animation.getCurrent() != animation.getDeath()) {
             deathSound.play();
+            super.removeComponents(RigidBody.class);
         }
         animation.use(animation.getDeath());
         var newAlpha = sprite.getAlpha() - (Time.getDelta() * 1.25f);
