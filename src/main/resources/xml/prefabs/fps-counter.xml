@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gameObject>
+    <bar components="game.components.FPSCounter"
+         zIndex="10000"
+         renderingMode="screen"
+         x="-6"
+         y="6"
+         alignment="top_right"
+         fontSize="16"
+         font="fonts/open-sans-regular.ttf"
+         foreground="black"
+         textFill="white"
+         stroke="white"
+         strokeWidth="1.5">
+        FPS: 00
+    </bar>
+</gameObject>

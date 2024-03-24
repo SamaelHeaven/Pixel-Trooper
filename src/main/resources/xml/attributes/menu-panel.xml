@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rectangle renderingMode="screen"
+           width="250"
+           height="250"
+           alignment="center"
+           fill="#4b4b4b80"
+           stroke="black"
+           strokeWidth="4"
+           radius="15"
+           interpolation="nearest_neighbor"/>

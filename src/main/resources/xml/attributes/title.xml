@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<text renderingMode="screen"
+      components="game.components.RotatingTitle"
+      alignment="top_center"
+      fill="black"
+      stroke="white"
+      strokeWidth="1"
+      font="fonts/joystix-monospace.ttf"
+      fontSize="60"/>

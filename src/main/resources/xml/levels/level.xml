@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<level>
+    <cursor cursor="none"/>
+
+    <audio name="music"
+           playOnStart="false"
+           url="audio/level-music.ogg"
+           volume="0.25"
+           loop="true"/>
+
+    <rectangle zIndex="-2" renderingMode="screen"
+               width="width"
+               height="height"
+               fill="#87ceeb"/>
+
+    <sprite zIndex="-1"
+            texture="textures/level-map.png"
+            interpolation="nearest_neighbor"/>
+
+    <xmlLoader url="xml/prefabs/fps-counter.xml"/>
+
+    <xmlLoader url="xml/prefabs/timer.xml"/>
+
+    <xmlLoader url="xml/prefabs/health-bar.xml"/>
+
+    <xmlLoader url="xml/prefabs/stamina-bar.xml"/>
+
+    <camera minX="0" maxX="6140" maxY="258" scrollVertically="false"/>
+
+    <player x="96"
+            y="540"
+            maxY="852"/>
+
+    <victoryTrigger x="6912" y="576" width="128" height="128" color="#ff000060"/>
+
+    <blockades>
+        <blockade x="0" y="608" width="288" height="192"/>
+        <blockade x="288" y="640" width="128" height="160"/>
+        <blockade x="416" y="672" width="32" height="128"/>
+        <blockade x="448" y="704" width="320" height="96"/>
+        <blockade x="-32" y="0" width="32" height="800"/>
+        <blockade x="864" y="704" width="416" height="96"/>
+        <blockade x="1248" y="640" width="32" height="64"/>
+        <blockade x="1280" y="544" width="800" height="256"/>
+        <blockade x="2240" y="544" width="32" height="256"/>
+        <blockade x="2496" y="544" width="352" height="32"/>
+        <blockade x="2912" y="544" width="224" height="256"/>
+        <blockade x="2912" y="0" width="128" height="352"/>
+        <blockade x="3040" y="0" width="480" height="320"/>
+        <blockade x="3520" y="0" width="128" height="352"/>
+        <blockade x="3136" y="672" width="896" height="128"/>
+        <blockade x="3648" y="0" width="576" height="320"/>
+        <blockade x="4032" y="576" width="608" height="224"/>
+        <blockade x="4224" y="0" width="416" height="352"/>
+        <blockade x="4768" y="608" width="64" height="192"/>
+        <blockade x="4832" y="640" width="192" height="160"/>
+        <blockade x="5024" y="608" width="96" height="192"/>
+        <blockade x="5120" y="640" width="384" height="160"/>
+        <blockade x="5504" y="608" width="320" height="192"/>
+        <blockade x="5600" y="448" width="128" height="16"/>
+        <blockade x="5824" y="640" width="416" height="160"/>
+        <blockade x="6240" y="608" width="96" height="192"/>
+        <blockade x="6336" y="576" width="96" height="224"/>
+        <blockade x="6432" y="544" width="96" height="256"/>
+        <blockade x="6528" y="512" width="64" height="288"/>
+        <blockade x="6784" y="0" width="320" height="512"/>
+        <blockade x="6784" y="704" width="320" height="96"/>
+        <blockade x="7104" y="0" width="32" height="800"/>
+    </blockades>
+
+    <jumpers>
+        <jumper x="3232" y="640"/>
+        <jumper x="2240" y="512"/>
+        <jumper x="4352" y="544"/>
+        <jumper x="4384" y="544"/>
+        <jumper x="4416" y="544"/>
+        <jumper x="5536" y="576"/>
+    </jumpers>
+
+    <boxes>
+        <box x="2912" y="352"/>
+        <box x="2912" y="384"/>
+        <box x="2912" y="416"/>
+        <box x="2912" y="448"/>
+        <box x="2912" y="480"/>
+        <box x="2912" y="512"/>
+        <box x="4608" y="352"/>
+        <box x="4608" y="384"/>
+        <box x="4608" y="416"/>
+        <box x="4608" y="448"/>
+        <box x="4608" y="480"/>
+        <box x="4608" y="512"/>
+        <box x="4608" y="544"/>
+        <box x="736" y="672"/>
+        <box x="736" y="640"/>
+        <box x="736" y="608"/>
+        <box x="736" y="576"/>
+        <box x="6144" y="608"/>
+        <box x="6144" y="576"/>
+        <box x="6176" y="576"/>
+        <box x="6208" y="576"/>
+        <box x="6176" y="608"/>
+        <box x="6208" y="608"/>
+    </boxes>
+
+    <spikes>
+        <spike x="1344" y="512"/>
+        <spike x="1376" y="512"/>
+        <spike x="1408" y="512"/>
+        <spike x="3136" y="640"/>
+        <spike x="3168" y="640"/>
+        <spike x="3200" y="640"/>
+        <spike x="4352" y="352" flippedVertically="true"/>
+        <spike x="4384" y="352" flippedVertically="true"/>
+        <spike x="4416" y="352" flippedVertically="true"/>
+        <spike x="4448" y="352" flippedVertically="true"/>
+        <spike x="4480" y="352" flippedVertically="true"/>
+        <spike x="4288" y="352" flippedVertically="true"/>
+        <spike x="4320" y="352" flippedVertically="true"/>
+        <spike x="5184" y="608"/>
+        <spike x="5216" y="608"/>
+        <spike x="5984" y="608"/>
+        <spike x="6016" y="608"/>
+        <spike x="6048" y="608"/>
+    </spikes>
+
+    <hearts>
+        <heart x="5664" y="416"/>
+        <heart x="4064" y="544"/>
+        <heart x="2720" y="512"/>
+    </hearts>
+
+    <turrets>
+        <turret x="5760" y="544"/>
+        <turret x="4480" y="512"/>
+        <turret x="4544" y="512"/>
+        <turret x="3840" y="608"/>
+        <turret x="3904" y="608"/>
+        <turret x="3968" y="608"/>
+        <turret x="2784" y="480"/>
+        <turret x="2016" y="480"/>
+        <turret x="1952" y="480"/>
+        <turret x="1184" y="640"/>
+    </turrets>
+
+    <explodingEyes>
+        <explodingEye x="3104" y="448"/>
+        <explodingEye x="1472" y="384"/>
+        <explodingEye x="1728" y="384"/>
+        <explodingEye x="1760" y="416"/>
+        <explodingEye x="1792" y="448"/>
+        <explodingEye x="1824" y="480"/>
+        <explodingEye x="992" y="576"/>
+        <explodingEye x="2720" y="352"/>
+        <explodingEye x="2784" y="416"/>
+        <explodingEye x="3552" y="544"/>
+        <explodingEye x="3584" y="512"/>
+        <explodingEye x="3680" y="544"/>
+        <explodingEye x="3712" y="512"/>
+        <explodingEye x="5088" y="480"/>
+        <explodingEye x="5216" y="448"/>
+        <explodingEye x="6368" y="416"/>
+        <explodingEye x="6400" y="384"/>
+        <explodingEye x="6336" y="448"/>
+    </explodingEyes>
+
+    <spirits>
+        <spirit x="4224" y="448"/>
+        <spirit x="6560" y="352"/>
+        <spirit x="5344" y="416"/>
+        <spirit x="5472" y="416"/>
+        <spirit x="6144" y="384"/>
+    </spirits>
+</level>

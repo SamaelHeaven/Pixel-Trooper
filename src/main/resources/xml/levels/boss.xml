@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<level>
+    <cursor cursor="none"/>
+
+    <audio name="music"
+           playOnStart="false"
+           url="audio/boss-music.ogg"
+           volume="0.2"
+           loop="true"/>
+
+    <rectangle renderingMode="screen"
+               zIndex="-2"
+               width="width"
+               height="height"
+               fill="black"/>
+
+    <sprite zIndex="-1"
+            texture="textures/boss-map.png"
+            interpolation="nearest_neighbor"/>
+
+    <xmlLoader url="xml/prefabs/fps-counter.xml"/>
+
+    <xmlLoader url="xml/prefabs/timer.xml"/>
+
+    <xmlLoader url="xml/prefabs/health-bar.xml"/>
+
+    <xmlLoader url="xml/prefabs/stamina-bar.xml"/>
+
+    <player x="160" y="256" maxY="288"/>
+
+    <camera minX="-96" maxX="-96" maxY="-128" verticalScroll="false"/>
+
+    <blockades>
+        <blockade x="0" y="0" width="768" height="32"/>
+        <blockade x="0" y="32" width="32" height="288"/>
+        <blockade x="736" y="32" width="32" height="288"/>
+        <blockade x="0" y="320" width="768" height="32"/>
+    </blockades>
+
+    <boss x="544" y="208"/>
+
+    <jumpers>
+        <jumper x="32" y="288"/>
+        <jumper x="704" y="288"/>
+    </jumpers>
+</level>

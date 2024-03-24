@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gameObject>
+    <bar renderingMode="screen"
+         components="game.components.player.PlayerHealthBar"
+         interpolation="nearest_neighbor"
+         zIndex="1000"
+         x="10"
+         y="10"
+         width="200"
+         height="30"
+         strokeWidth="3"
+         fontSize="16"
+         font="fonts/joystix-monospace.ttf"
+         textFill="black"
+         background="#a76f67"
+         foreground="#e0371d"/>
+</gameObject>

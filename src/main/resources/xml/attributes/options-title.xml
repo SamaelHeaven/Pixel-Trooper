@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<text alignment="top_center"
+      renderingMode="screen"
+      interpolation="nearest_neighbor"
+      fill="white"
+      stroke="black"
+      strokeWidth="1"
+      font="fonts/joystix-monospace.ttf"
+      fontSize="24"/>

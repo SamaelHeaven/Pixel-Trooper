@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bar renderingMode="screen"
+     alignment="center"
+     interpolation="nearest_neighbor"
+     width="200"
+     height="50"
+     fontSize="30"
+     strokeWidth="2.5"
+     font="fonts/joystix-monospace.ttf"
+     radius="10"/>

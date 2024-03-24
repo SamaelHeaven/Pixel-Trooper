@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<scene>
+    <cursor cursor="default"/>
+
+    <xmlLoader url="xml/prefabs/menu-background.xml"/>
+
+    <xmlLoader url="xml/prefabs/fps-counter.xml"/>
+
+    <text attributes="xml/attributes/title.xml"
+          y="50">
+        Options
+    </text>
+
+    <rectangle attributes="xml/attributes/menu-panel.xml"
+               y="25"
+               width="450"
+               height="275">
+
+        <text attributes="xml/attributes/options-title.xml"
+              fill="black"
+              y="17"
+              x="2"
+              blur="2">
+            Display Mode
+        </text>
+
+        <text attributes="xml/attributes/options-title.xml"
+              y="15">
+            Display Mode
+        </text>
+
+        <bar attributes="xml/attributes/options-button.xml"
+             components="game.components.buttons.DisplayModeButton"
+             name="window"
+             y="55"
+             x="-135"
+             width="120">
+            Window
+        </bar>
+
+        <bar attributes="xml/attributes/options-button.xml"
+             components="game.components.buttons.DisplayModeButton"
+             name="maximized"
+             y="55"
+             width="120">
+            Maximized
+        </bar>
+
+        <bar attributes="xml/attributes/options-button.xml"
+             components="game.components.buttons.DisplayModeButton"
+             name="fullscreen"
+             y="55"
+             x="135"
+             width="120">
+            Fullscreen
+        </bar>
+
+        <text attributes="xml/attributes/options-title.xml"
+              fill="black"
+              y="102"
+              x="2"
+              blur="2">
+            FPS Target
+        </text>
+
+        <text attributes="xml/attributes/options-title.xml"
+              y="100">
+            FPS Target
+        </text>
+
+        <bar attributes="xml/attributes/options-button.xml"
+             components="game.components.buttons.FPSTargetButton"
+             name="30"
+             y="140"
+             x="-115"
+             width="100">
+            30 FPS
+        </bar>
+
+        <bar attributes="xml/attributes/options-button.xml"
+             components="game.components.buttons.FPSTargetButton"
+             name="45"
+             y="140"
+             width="100">
+            45 FPS
+        </bar>
+
+        <bar attributes="xml/attributes/options-button.xml"
+             components="game.components.buttons.FPSTargetButton"
+             name="60"
+             y="140"
+             x="115"
+             width="100">
+            60 FPS
+        </bar>
+
+        <text attributes="xml/attributes/options-title.xml"
+              fill="black"
+              y="192"
+              x="2"
+              blur="2">
+            Volume
+        </text>
+
+        <text attributes="xml/attributes/options-title.xml"
+              y="190">
+            Volume
+        </text>
+
+        <bar components="game.components.VolumeSlider"
+             renderingMode="screen"
+             alignment="top_center"
+             width="250"
+             height="20"
+             y="230"
+             strokeWidth="2.5"
+             foreground="#3ce3e6"
+             background="#547f80">
+            <oval name="volumeSliderOval"
+                  renderingMode="screen"
+                  alignment="center_left"
+                  width="30"
+                  height="30"
+                  fill="white"
+                  stroke="black"
+                  strokeWidth="2"/>
+        </bar>
+
+        <rectangle alignment="bottom_center"
+                   renderingMode="screen"
+                   y="55"
+                   width="width"
+                   height="4"
+                   fill="black"
+                   stroke="white"
+                   strokeWidth="1"/>
+
+        <bar components="game.components.buttons.MenuNavigationButton"
+             attributes="xml/attributes/navigation-button.xml"
+             alignment="bottom_left"
+             y="75">
+            Menu
+        </bar>
+
+        <bar components="game.components.buttons.PlayNavigationButton"
+             attributes="xml/attributes/navigation-button.xml"
+             alignment="bottom_right"
+             y="75">
+            Play
+        </bar>
+    </rectangle>
+</scene>

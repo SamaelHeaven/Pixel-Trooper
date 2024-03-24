@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<scene>
+    <cursor cursor="default"/>
+
+    <audio url="audio/game-over-sound.ogg"
+           volume="0.3"/>
+
+    <rectangle zIndex="5000"
+               renderingMode="screen"
+               width="width"
+               height="height"
+               fill="#7f7f7f7f"/>
+
+    <bar zIndex="5000"
+         renderingMode="screen"
+         interpolation="nearest_neighbor"
+         font="fonts/joystix-monospace.ttf"
+         alignment="top_center"
+         foreground="black"
+         textFill="white"
+         stroke="white"
+         fontSize="50"
+         strokeWidth="3"
+         y="40"
+         height="70"
+         width="480">
+        Game Over
+    </bar>
+
+    <bar zIndex="5000"
+         components="game.components.buttons.ReplayNavigationButton"
+         attributes="xml/attributes/navigation-button.xml"
+         y="-30">
+        Replay
+    </bar>
+
+    <bar zIndex="5000"
+         components="game.components.buttons.MenuNavigationButton"
+         attributes="xml/attributes/navigation-button.xml"
+         y="60">
+        Menu
+    </bar>
+</scene>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<scene>
+    <cursor cursor="default"/>
+
+    <audio name="music"
+           playOnStart="false"
+           url="audio/menu-music.ogg"
+           volume="0.2"
+           loop="true"/>
+
+    <xmlLoader url="xml/prefabs/menu-background.xml"/>
+
+    <xmlLoader url="xml/prefabs/fps-counter.xml"/>
+
+    <text attributes="xml/attributes/title.xml"
+          y="50">
+        Pixel Trooper
+    </text>
+
+    <rectangle attributes="xml/attributes/menu-panel.xml"
+               y="50">
+        <bar components="game.components.buttons.PlayNavigationButton"
+             attributes="xml/attributes/navigation-button.xml"
+             y="-80">
+            Play
+        </bar>
+
+        <bar components="game.components.buttons.OptionsNavigationButton"
+             attributes="xml/attributes/navigation-button.xml">
+            Options
+        </bar>
+
+        <bar components="game.components.buttons.QuitNavigationButton"
+             attributes="xml/attributes/navigation-button.xml"
+             y="80">
+            Quit
+        </bar>
+    </rectangle>
+</scene>
