@@ -33,6 +33,5 @@ public final class BossPrefab extends XMLPrefab {
     }
 
     @Override
-    protected void setProperties(XMLElement xmlElement) {
-    }
+    protected void setProperties(XMLElement xmlElement) {}
 }
